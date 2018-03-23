@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.anny.loginapp3.Login">
+
+    <LinearLayout
+        android:id="@+id/my_layout_id"
+        android:layout_width="384dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/fon1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView_login"
+        android:layout_width="192dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Login page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_user"
+        android:layout_width="199dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/textView_username"
+        app:layout_constraintStart_toEndOf="@+id/textView_username"
+        app:layout_constraintTop_toTopOf="@+id/textView_username"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/textView_password"
+        app:layout_constraintTop_toBottomOf="@+id/editText_user" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:text="username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_login" />
+
+    <TextView
+        android:id="@+id/textView_password"
+        android:layout_width="86dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_username" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:text="login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_attempt_count" />
+
+    <TextView
+        android:id="@+id/textView_attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Attempt"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_attempt_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_attempt_count" />
+
+    <TextView
+        android:id="@+id/textView_attempt_count"
+        android:layout_width="167dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/textView_attempt"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password"
+        app:layout_constraintVertical_bias="0.324" />
+
+
+</android.support.constraint.ConstraintLayout>
