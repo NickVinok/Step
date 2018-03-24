@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.anny.loginapp3.SecondView">
 
+    <LinearLayout
+        android:id="@+id/my_layout_id"
+        android:layout_width="423dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/fon1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textView_nick"

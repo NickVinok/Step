@@ -8,86 +8,79 @@ tools:context="com.example.anny.loginapp3.Login">
 
     <LinearLayout
         android:id="@+id/my_layout_id"
-        android:layout_width="384dp"
+        android:layout_width="423dp"
         android:layout_height="match_parent"
         android:background="@drawable/fon1"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
 
-
-    <TextView
-        android:id="@+id/textView_login"
-        android:layout_width="192dp"
-        android:layout_height="58dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:text="Login page"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/editText_user"
         android:layout_width="199dp"
         android:layout_height="40dp"
-        android:layout_marginStart="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/textView_username"
-        app:layout_constraintStart_toEndOf="@+id/textView_username"
-        app:layout_constraintTop_toTopOf="@+id/textView_username"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toEndOf="@+id/imageView_email"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
 
     <EditText
         android:id="@+id/editText_password"
         android:layout_width="200dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toEndOf="@+id/textView_password"
-        app:layout_constraintTop_toBottomOf="@+id/editText_user" />
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toEndOf="@+id/imageView_pass"
+        app:layout_constraintTop_toBottomOf="@+id/editText_user"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView_username"
-        android:layout_width="80dp"
+    <ImageView
+        android:id="@+id/imageView_pass"
+        android:layout_width="116dp"
         android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="68dp"
-        android:text="username"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_login" />
-
-    <TextView
-        android:id="@+id/textView_password"
-        android:layout_width="86dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:text="password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_username" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563"
+        app:srcCompat="@drawable/parol" />
 
     <Button
         android:id="@+id/button_login"
-        android:layout_width="wrap_content"
+        android:layout_width="168dp"
         android:layout_height="37dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="login"
+        android:background="@drawable/entry"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_attempt_count" />
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_attempt_count"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView_attempt"
@@ -114,6 +107,46 @@ tools:context="com.example.anny.loginapp3.Login">
         app:layout_constraintStart_toEndOf="@+id/textView_attempt"
         app:layout_constraintTop_toBottomOf="@+id/editText_password"
         app:layout_constraintVertical_bias="0.324" />
+
+    <ImageView
+        android:id="@+id/imageView_email"
+        android:layout_width="103dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/imageView_reg"
+        android:layout_width="240dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/my_layout_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        app:srcCompat="@drawable/reg" />
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="181dp"
+        app:srcCompat="@drawable/logo1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </android.support.constraint.ConstraintLayout>
